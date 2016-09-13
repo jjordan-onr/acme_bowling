@@ -1,0 +1,19 @@
+{
+  "name": "bowling_server",
+  "version": "1.0.0",
+  "description": "Server for bowling thing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjordan-onr/acme_bowling.git"
+  },
+  "author": "Josh NOT Derek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjordan-onr/acme_bowling/issues"
+  },
+  "homepage": "https://github.com/jjordan-onr/acme_bowling#readme"
+}
