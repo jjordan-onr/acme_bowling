@@ -64,9 +64,8 @@ server.get('/bowlers/:bowlerName/stats', function(req, res, next){
 // Add game data
 server.post('/games', (req, res, next) => {
     log.debug(`index.js: Adding game data`);
-    //redis.setHostEntry(req.params.customerName, req.body, (err, data) => {
-    //    sendResponse(err, data, res);
-    //});
+    bowling.storeGame(JSON.parse(req.body));
+    sendResponse(null, {saved: "ok"}, res);
 });
 
 /**

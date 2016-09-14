@@ -13,13 +13,6 @@
       "score": 300,
       "turkeys": 2,
       "beers": 2
-    },
-    {
-      "userId": "user666",
-      "gameId": "game666",
-      "score": 150,
-      "turkeys": 9,
-      "beers": 1
     }
   ]
 }
