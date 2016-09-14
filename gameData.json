@@ -1,3 +1,18 @@
 {
-  "games": []
+  "games": [
+    {
+      "userId": "user123",
+      "gameId": "game123",
+      "score": 200,
+      "turkeys": 1,
+      "beers": 73
+    },
+    {
+      "userId": "user123",
+      "gameId": "game456",
+      "score": 300,
+      "turkeys": 2,
+      "beers": 2
+    }
+  ]
 }

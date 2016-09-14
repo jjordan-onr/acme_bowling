@@ -40,6 +40,24 @@ class Bowling{
         return sumBeers;
     }
 
+    getTotalTurkeys(userId){
+        var entries = this.getGameData(userId);
+        var totalGames = entries.length;
+        var sumTurkeys = 0;
+        for(var i=0; i<totalGames; i++){
+            sumTurkeys += entries[i].turkeys;
+        }
+        return sumTurkeys;
+    }
+
+    getStats(userId){
+        return {
+            totalGames: this.getTotalGames(userId),
+            totalBeers: this.getTotalBeers(userId),
+            totalTurkeys: this.getTotalTurkeys(userId),
+            average: this.getAverageScore(userId)
+        }
+    }
 }
 
 module.exports = Bowling;

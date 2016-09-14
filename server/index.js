@@ -57,9 +57,7 @@ server.get('/check', function(req, res, next){
 // Get game data
 server.get('/bowlers/:bowlerName/stats', function(req, res, next){
     log.debug('index.js: Getting bowler stats');
-    var data = {
-        "stats": req.params.bowlerName
-    };
+    var data = bowling.getStats(req.params.bowlerName);
     sendResponse(null, data, res);
 });
 
