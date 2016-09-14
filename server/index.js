@@ -64,7 +64,10 @@ server.get('/bowlers/:bowlerName/stats', function(req, res, next){
 // Add game data
 server.post('/games', (req, res, next) => {
     log.debug(`index.js: Adding game data`);
-    bowling.storeGame(JSON.parse(req.body));
+    if(isObject(req.body))
+        bowling.storeGame(req.body);
+    else    
+        bowling.storeGame(JSON.parse(req.body));
     sendResponse(null, {saved: "ok"}, res);
 });
 

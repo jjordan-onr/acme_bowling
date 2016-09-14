@@ -20,7 +20,7 @@ describe('Bowling Stats Tests', function(){
     };
     var Bowling = null;
     beforeEach(function(){
-        console.log('Instantiating new testDB...');
+        console.log('Instantiating new bowling object...');
         Bowling = new bowling('testDB');
     });
     it('should store game data to lowdb', function(){
