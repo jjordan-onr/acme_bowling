@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/jjordan-onr/acme_bowling/issues"
   },
-  "homepage": "https://github.com/jjordan-onr/acme_bowling#readme"
+  "homepage": "https://github.com/jjordan-onr/acme_bowling#readme",
+  "dependencies": {
+    "bunyan": "^1.8.1",
+    "lodash": "^4.15.0",
+    "lowdb": "^0.13.1",
+    "restify": "4.1.0"
+  }
 }
