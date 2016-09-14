@@ -35,26 +35,22 @@
     $( "#submit_button" ).click(function() {
         
         var data = {};
-        data.userId = "999";
+        data.userId = "user999";
         data.gameId = $("#game_id").val();
         data.score = game.total;
         data.turkeys = game.turkeys;
-        data.beers = $("#num_of_beers").val();
+        data.beers = parseInt($("#num_of_beers").val());
             
-        console.log(JSON.stringify(data));
-        
-/*
         $.ajax({
             type: 'POST',
             data: JSON.stringify(data),
             contentType: 'application/json',
-            url: 'http://localhost:3000/endpoint',						
+            url: 'http://192.168.1.235:8080/games',						
             success: function(data) {
                 console.log('success');
                 console.log(JSON.stringify(data));
-                window.location.replace("/index.php");
+                window.location.replace("index.php");
             }
         });
-*/
         
     });
