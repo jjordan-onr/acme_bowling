@@ -35,8 +35,8 @@
     $( "#submit_button" ).click(function() {
         
         var data = {};
-        data.id = "999";
-        data.game_id = $("#game_id").val();
+        data.userId = "999";
+        data.gameId = $("#game_id").val();
         data.score = game.total;
         data.turkeys = game.turkeys;
         data.beers = $("#num_of_beers").val();
